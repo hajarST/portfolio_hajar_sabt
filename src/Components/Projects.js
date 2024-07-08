@@ -19,32 +19,51 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
-    {
-      title: "Diplôme Bac Option Sciences Physique",
-      description: "2013/2014",
-      imgUrl: projImg1,
-    }
-    ,
-    {
-      title: "Attestation Bureautique  ",
-      description: "2014/2015",
-      imgUrl: projImg4,
-    },
+  // const projects = [
    
-    {
-      title: "Diplôme Technicien spécialisé en Développement Informatique",
-      description: "2017/2019",
-      imgUrl: projImg2,
-    },
-    
-    {
-      title: "Diplôme Technicien spécialisé en Gestion des Entreprises",
-      description: "2015/2017",
-      imgUrl: projImg3,
-    }
-   
-  ];
+  //   {
+  //     title: "Certificat IBM",
+  //     description: "Introduction to Cloud Computing",
+  //     imgUrl: projImg6,
+  //   },
+  //   {
+  //     title: "Certificat University of Mechigan ",
+  //     description: "Data Collection and Processing with Python",
+  //     imgUrl: projImg7,
+  //   },
+  //   {
+  //     title: "Certificat IBM",
+  //     description: "Devops , Cloud and Agile Foundations ",
+  //     imgUrl: projImg8,
+  //   },
+  //   {
+  //     title: "Certificat IBM",
+  //     description: "Introduction to Devops",
+  //     imgUrl: projImg9,
+  //   },
+  //   {
+  //     title: "Certificat University of Mechigan",
+  //     description: "Python Functions , Files and Dictionnaries",
+  //     imgUrl: projImg10,
+  //   },
+  //   ,
+  //   {
+  //     title: "Certificat Meta ",
+  //     description: "Advanced React",
+  //     imgUrl: projImg11,
+  //   },
+  //   {
+  //     title: "Certificat IBM",
+  //     description: "Introduction to Agile Devlopment and Scrum",
+  //     imgUrl: projImg12,
+  //   },
+  //   {
+  //     title: "Certificat MOOC",
+  //     description: "Comptabilité des opérations courantes",
+  //     imgUrl: projImg13,
+  //   },
+  // ];
+ //******************** */
   const certificats = [
    
     {
@@ -111,23 +130,52 @@ export const Projects = () => {
                     <Nav.Item>
                       <Nav.Link eventKey="third">Expériences</Nav.Link>
                     </Nav.Item>
-                   
+                    {/* <Nav.Item>
+                      <Nav.Link eventKey="forth">Projets</Nav.Link>
+                    </Nav.Item> */}
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
+                  <Tab.Pane eventKey="first">
+                      <table>
+                      <tr>
+                          <td> Diplôme Ingénieur informatique et réseaux à l'EMSI Marrakech  </td>
+                          <td>--</td>
+                          <td style={{ textAlign: 'center' }}>2021/2024</td>
+                        </tr>
+                        <tr>
+                          <td>Diplôme Technicien spécialisé en Développement Informatique à NTIC SYBA Marrakech</td>
+                          <td>--</td>
+                          <td style={{ textAlign: 'center' }}>2017/2019</td>
+                          
+                        </tr>
+                      <tr>
+                          <td> Diplôme Technicien spécialisé en Gestion des Entreprises à l'ISGI AZLI Marrakech </td>
+                          <td>--</td>
+                          <td style={{ textAlign: 'center' }}>015/2017</td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Attestation Bureautique à Polytechnique Sud </td>
+                          <td>--</td>
+                          <td style={{ textAlign: 'center' }}>2014/2015</td>
+                          
+                        </tr>
+                        <tr>
+                          <td> Diplôme Bac Option Sciences Physique </td>
+                          <td>--</td>
+                            <td style={{ textAlign: 'center' }}>2013/2014</td>
+       
+                          
+                        </tr>
+                        
+                       
+    
+   
+   
+
+</table>
                     </Tab.Pane>
+                   
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
@@ -144,6 +192,24 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <table>
+                      <tr>
+                          <td>Stage de 01/03/2024 au 30/09/2024 Développeuse mobile chez Devauga :</td>
+                          <td>
+                            <ul>
+                              <li>Conception et réalisation d’une application Mobile de géolocalisation devéhicules par GPS</li>
+                              <li>Technologies: (Flutter - Dart , Node Js - Express Js , MySql, Ngrok , Firebase Messaging , Push Notification)</li>
+                          </ul>
+                          </td>
+                        </tr>
+                      <tr>
+                          <td>Stage de 01/08/2023 au 30/09/2023 Développeuse mobile chez Devauga :</td>
+                          <td>
+                            <ul>
+                              <li>Conception et réalisation d’une application Mobile de gestion des rechargesdes cartes Sim Inwi pour traceurs GPS avec synchronisation d’un plateforme desuivi de ces traceurs Idirtrack</li>
+                              <li>Technologies: (Flutter - Dart , Php , MySql, Ngrok)</li>
+                          </ul>
+                          </td>
+                        </tr>
                       <tr>
                           <td>Stage de 01/08/2022 au 31/08/2022 Développeur informatique chez SEOCOM :</td>
                           <td>
@@ -193,9 +259,22 @@ export const Projects = () => {
 </table>
                     </Tab.Pane>
                     {/* <Tab.Pane eventKey="forth">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="fifth">
+                      <Row>
+                        {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane> */}
+
+                    
+                    {/* <Tab.Pane eventKey="fifth">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="sixth">

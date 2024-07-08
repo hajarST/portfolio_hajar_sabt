@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import hajarPhoto from "../assets/img/hjrst.jpg";
+ import hajarPhoto from "../assets/img/profil.jpeg";
+// import hajarPhoto from "../assets/img/hjrst.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -10,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Ingénieur logiciel", "Ingénieur en informatique et réseaux", "Ingénieur Web/Mobile" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +57,8 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
               
                 <h1>{`Salut! c'est Hajar Sabt`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Développeuse Web", "Développeuse Mobile" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Actuellement élève en quatriéme année ingénierie informatique et réseaux à l'EMSI Marrakech. J'ai un diplôme de technicien spécialisé en Développement Informatique
-                     et un diplôme de technicien spécialisé en Gestion des Entreprises. Une attestation de MOOC en comptabilité générale et différents certificats de Coursera en développement informatique: React advanced , Python , HTML & Css & Javascript... </p>
+                  <p>Actuellement ingénieur en informatique et réseaux à l'EMSI Marrakech. J'ai un diplôme de technicien spécialisé en Développement Informatique
+                     et un diplôme de technicien spécialisé en Gestion des Entreprises. Une attestation de MOOC en comptabilité générale et différents certificats de Coursera en développement informatique: React advanced , Python , Machine learning, Deep Learning... </p>
                 
               </div>}
             </TrackVisibility>
